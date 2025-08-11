@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chat Lobby - لعبة الشات</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loginScreen" class="overlay">
+    <div class="card">
+      <h2>ادخل اسمك واختر لون الشخصية</h2>
+      <input id="nameInput" placeholder="اسمك" maxlength="20" />
+      <input id="colorInput" type="color" value="#2d8cff" />
+      <button id="joinBtn">ادخل اللعبه</button>
+    </div>
+  </div>
+
+  <div id="game">
+    <div id="left">
+      <div id="lobbyArea">
+        <canvas id="world" width="760" height="420"></canvas>
+      </div>
+      <div id="controls">استخدم الأسهم أو WASD للحركة</div>
+    </div>
+
+    <div id="right">
+      <div id="chat">
+        <div id="chatMessages"></div>
+        <div id="chatInput">
+          <input id="message" placeholder="اكتب رسالة..." />
+          <button id="sendBtn">ارسال</button>
+        </div>
+      </div>
+      <div id="playersList">
+        <h3>اللاعبين</h3>
+        <ul id="players"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>

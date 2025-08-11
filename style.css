@@ -1,0 +1,19 @@
+*{box-sizing:border-box;font-family:system-ui,Segoe UI,Helvetica,Arial,sans-serif}
+body{margin:0;background:#f5f7fb;color:#111}
+.overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.35)}
+.card{background:white;padding:20px;border-radius:10px;min-width:300px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.12)}
+#game{display:flex;gap:12px;padding:18px;max-width:1100px;margin:18px auto}
+#left{flex:1}
+#right{width:320px;display:flex;flex-direction:column;gap:12px}
+#lobbyArea{background:#e6eefc;border-radius:8px;padding:10px}
+canvas{background:linear-gradient(180deg,#cfe0ff,#eaf4ff);border-radius:6px;display:block;margin:0 auto;border:1px solid rgba(0,0,0,0.06)}
+#controls{margin-top:8px;text-align:center;color:#556}
+#chat{background:white;border-radius:8px;padding:8px;flex:1;display:flex;flex-direction:column;height:320px;overflow:hidden;border:1px solid rgba(0,0,0,0.06)}
+#chatMessages{flex:1;overflow:auto;padding:8px}
+#chatMessages .msg{margin-bottom:8px;padding:6px;border-radius:6px;background:#f1f4ff}
+#chatInput{display:flex;gap:8px;margin-top:8px}
+#chatInput input{flex:1;padding:8px;border-radius:6px;border:1px solid #ddd}
+#playersList{background:white;border-radius:8px;padding:10px;border:1px solid rgba(0,0,0,0.06)}
+#playersList ul{list-style:none;padding:0;margin:0}
+#playersList li{padding:6px;border-bottom:1px solid #f0f0f0;display:flex;align-items:center;gap:8px}
+.avatarDot{width:14px;height:14px;border-radius:50%}
